@@ -9,9 +9,19 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.main-title{
+    display: flex;
+    align-content: center;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 50px;
 }
 
 ul {
