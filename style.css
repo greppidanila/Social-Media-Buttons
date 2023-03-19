@@ -45,12 +45,18 @@ ul li {
   transition: 0.5s;
 }
 
-ul li:hover {
+ul li:hover, 
+ul li:active, 
+ul li:focus, 
+ul li.is-active {
   width: 180px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
 }
 
-ul li::before {
+ul li::before, 
+ul li:active::before, 
+ul li:focus::before, 
+ul li.is-active::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -66,7 +72,10 @@ ul li::before {
     filter: blur(0px); /* Quitamos el filtro de desenfoque */
   }
   
-  ul li::after {
+  ul li::after, 
+ul li:active::after, 
+ul li:focus::after, 
+ul li.is-active::after{
     content: "";
     position: initial;
     top: 10px;
